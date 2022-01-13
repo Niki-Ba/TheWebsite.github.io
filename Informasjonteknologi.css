@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    
+    
+}
+
+.load
+{
+    animation: slide 2s; 
+}
+
+.slider{
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    animation: slide 18s infinite;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content
+{
+    position:absolute;
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.principal
+{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    letter-spacing: 5px; 
+    text-align: center;
+}
+
+.principal h1{
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 0.7rem;
+    margin-bottom: 0px;
+    padding-top: 350px;
+}
+
+
+.principal  h1 span{
+    font-weight: 100;
+  }
+
+.principal p{
+font-size: 23px;
+margin-bottom: 300px;
+padding-top: 300px;
+font-weight: bold;
+}
+
+@keyframes slide {
+0%{
+    background-image: url('tec1.png')
+}
+20%{
+    background-image: url('tec1.png')
+}
+20.01%{
+    background-image: url('tec2.png')
+}
+40%{
+    background-image: url('tec2.png')
+}
+40.01%{
+    background-image: url('tec3.png')
+}
+60%{
+    background-image: url('tec3.png')
+}
+60.01%{
+    background-image: url('tec4.png')
+}
+80%{
+    background-image: url('tec4.png')
+}
+80.01%{
+    background-image: url('tec5.png')
+}
+100%{
+    background-image: url('tec5.png')
+}
+}
+
+.container
+{
+    top: 30%;
+    margin-top:2345rem;
+    left:15%;
+    width: 240px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.neonbtn:hover
+{
+    box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee,
+                0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
+                text-shadow: 0 0 5px #15f4ee, 0 0 5px #15f4ee;
+}
+
+.dropbtn {
+    margin-top:0px;
+    background-color: #085574;
+    border: none; 
+    border-radius: 40rem;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    font-size: 35px;
+    text-align: center;
+  }
+  
+  .dropdown-content {
+    display: none;
+    border-radius: 40rem;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 320px;
+    box-shadow: 3px 6px 6px 3px rgba(0, 0, 0, 0.113);
+    z-index: 1;
+    margin-top: 2px;
+    margin-left:321px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 13px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: rgba(0, 85, 68, 0.575);}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: rgba(0, 85, 68, 0.575);}
+ 

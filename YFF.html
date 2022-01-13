@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="YFF.css"> 
+    <title>YFF</title>
+</head>
+<body>
+    
+<!--https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci-->
+<header class="header">
+    <nav class="navbar">
+        <a href="./index.html" class="nav-logo">Hjem</a>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="./CV.html" class="nav-link">CV</a>
+            </li>
+            <li class="nav-item">
+                <a href="./Logg.html" class="nav-link">Loggføring</a>
+            </li>
+            <li class="nav-item">
+                <a href="./Presentasjonen.html" class="nav-link">Presentasjonen</a>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+</header>
+<script>
+        const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
+
+        </script>
+       
+       <div class="center">
+             <div class="loader">
+            <span></span>  
+            <span></span>  
+            <span></span>  
+            <span></span>  
+            <span></span>  
+            <span></span>  
+            <span></span>  
+            <span></span>  
+            <span></span>  
+            <span></span>  
+            <span></span>  
+            <span></span>  
+            <span></span>  
+            <span><h4>YFF</h4></span>  
+        </div>
+</div>
+
+</body>
+</html>
